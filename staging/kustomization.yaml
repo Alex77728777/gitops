@@ -1,0 +1,9 @@
+resources:
+- ../base
+replicas:
+- name: busyargo 
+  count: 2
+namespace: staging
+labels:
+  - pairs:
+      env: staging

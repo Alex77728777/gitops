@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: busyargo
+  name: busyargo
+spec:
+  ports:
+  - port: 30001
+    protocol: TCP
+    targetPort: 30001
+  selector:
+    app: busyargo
+status:
+  loadBalancer: {}
